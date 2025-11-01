@@ -1,31 +1,23 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "name",
+  "name": "flexroom-rw",
   "main": "src/worker.tsx",
   "compatibility_date": "2024-09-23",
-  "compatibility_flags": [
-    "nodejs_compat"
-  ],
-  "assets": {
-    "binding": "ASSETS",
-    "directory": "public"
-  },
-  "observability": {
-    "enabled": true
-  },
-  "vars": {},
+  "compatibility_flags": ["nodejs_compat"],
+  "account_id": "5dd1b1794b547dd97bdbfa84a14a4b5f",
+
   "d1_databases": [
     {
       "binding": "DB",
-      "database_name": "name",
-      "database_id": "__change_me__",
-      "migrations_dir": "drizzle"
+      "database_name": "flexroom-db",
+      "database_id": "d59c3113-ff80-460d-b2b6-a8c55dcb3a28"
     }
   ],
+
   "r2_buckets": [
     {
       "binding": "R2",
-      "bucket_name": "name"
+      "bucket_name": "flexrooms"
     }
   ]
 }

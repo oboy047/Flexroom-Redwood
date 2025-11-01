@@ -1,6 +1,8 @@
-import { Welcome } from "./Welcome.js";
-
-export const Home = () => {
-  // _Feel free to delete this element and its import_
-  return <Welcome />;
-};
+export function Home() {
+  return (
+    <>
+      <h1>Welcome to FlexRoom 🏢</h1>
+      <p>Find and book the perfect meeting space instantly.</p>
+    </>
+  )
+}
